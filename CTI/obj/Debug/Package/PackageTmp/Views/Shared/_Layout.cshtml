@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Главная</title>
+    <meta name="description" content="Vozx HTML5 premium template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,900" type="text/css">
+    @Styles.Render("~/Content/css")
+    <base href="~/Content/" />
+</head>
+<body>
+    <header id="ABdev_main_header" class="clearfix default">
+        <div>
+            <div class="container">
+                <div id="logo">
+                    <a href="/">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#"><span>Главная</span></a>
+
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#"><span>Услуги</span></a>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#"><span>О нас</span></a>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#"><span>Контакты</span></a></li>
+                    </ul>
+                </nav>
+                <div id="ABdev_menu_toggle"><i class="ci_icon-navicon"></i></div>
+            </div>
+        </div>
+    </header>
+
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/rs-plugin")
+    @Scripts.Render("~/bundles/scripts")
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;ver=4.0.1"></script>
+</body>
+</html>
